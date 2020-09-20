@@ -1,0 +1,779 @@
+body{
+    font-family: 'Cairo', sans-serif;
+}
+a{text-decoration: none;}
+.header{
+    height: 90vh;
+    background-image: url('../imgs/bg.png');
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: 170px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+}
+.img-logo{
+    width: 230px;
+}
+.header .header-info{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.header .header-info i{
+    font-size: 25px;
+    color: #fff;
+}
+.header .header-info span{
+    background: #fff;
+    border-radius: 20px;
+    padding:0 20px;
+    margin-right: 5px;
+}
+.header .header-info a{color: #888;text-decoration: none;}
+.header .title
+{position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+.header .title h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 120px;
+}
+.title .image{
+width: 50px;
+position: absolute;
+top:170px;
+left: 50%;
+}
+.search{
+    background-image:linear-gradient(to right,#d0465c,#ff8a5c);
+    padding: 20px;
+    position: absolute;
+    width: 80%;
+    right: 50%;
+    transform: translateX(50%);
+    top: 82%;
+}
+.search select{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    /* width: 320px; */
+    padding: 10px 25px;
+    color: #888;
+    outline: none;
+}
+select::-ms-expand{
+    display: none
+}
+.search .select{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* width: 20em; */
+    height: 3.5em;
+    z-index: 10;
+}
+.search .select::after{
+position: absolute;
+content: '\25BC';
+top: 20px;
+left: 10px;
+padding: 0 1em;
+cursor: pointer;
+ pointer-events: none;
+}
+.search select{
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+}
+.search h6{
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 30px;
+    margin-top: 3px;
+}
+.search h6 a{
+    color: #888;
+}
+@media screen and (max-width:768px){
+   
+    .search select{
+        margin-bottom: 10px;
+    }
+    .search .select{
+            height: 3em;
+        }
+     .search .select::after{
+         left: 0;
+         top: 9px;
+        }
+        .search h6{
+            width: 80%;
+            margin: auto;
+        }
+
+    }
+    .col-lg-2{padding-right: 0;}
+.dropdown .btn{
+    margin: auto;
+    width: 100%;
+    font-size: 10px;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #444444;
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+.dropdown-toggle::after {
+    margin-right: 1em;
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}
+/* ///////////////////////////////// */
+.nav-link{
+margin-top: -50px;
+}
+.nav-link i{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 30px;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.nav-link a{text-decoration: none;display: block;}
+.nav-link .data{
+text-align: center;
+display: grid;
+justify-content: center;
+}
+.nav-link .col-lg-2:first-of-type i{
+    background-image: linear-gradient(red,orange);
+}
+.nav-link .col-lg-2:nth-of-type(2) i{
+    background-image: linear-gradient(red,black);
+}
+.nav-link .col-lg-2:nth-of-type(3) i{
+    background-image: linear-gradient(orange,black);
+}
+.nav-link .col-lg-2:nth-of-type(4) i{
+    background-image: linear-gradient(#0dc5d9,#1d929b);
+}
+.nav-link .col-lg-2:nth-of-type(5) i{
+    background-image: linear-gradient(red,orange);
+}
+.nav-link .col-lg-2:last-of-type i{
+    background-image: linear-gradient(red,black);
+}
+.icone-select{
+    overflow: hidden;
+    display: flex;
+    font-size: 12px;
+    width: 150px;
+    height: 25px;
+    z-index: 10;
+}
+.icone-select select{
+    border-radius: 10px;
+    background-color: #444;
+    color: #ddd;
+    width: 150px;
+}
+@media screen and (max-width:768px){
+    .icone-select{
+        font-size: 9px;
+        width: 110px;
+    }
+    .nav-link{margin-top: 30px;}
+}
+/* ***************************** */
+.row{margin: 0;}
+.cards{
+    margin: 50px 20px 10px;
+}
+.cards .card{
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.cards .card-title h2{
+    color: #d25167;
+    border-right: 5px solid #ff8a5c;
+    padding-right: 7px;
+    margin-bottom: 20px;
+}
+.cards .card .card-body{
+    background: #f5f5f5;
+    border-radius:0 0 20px 20px;
+    box-shadow: 1px 2px 3px #ddd;
+}
+.cards .card .card-body h3{
+    font-weight: bold;
+}
+.cards .card .info p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+}
+.cards .card .info i{
+    color: #cf455c;
+}
+.cards button{
+    background-image: linear-gradient(red,orange);
+    color: #fff;
+    padding: 10px 90px;
+    border-radius: 20px;
+    margin: auto;
+    text-decoration: none;
+    border: none;
+}
+.cards a{color: #fff;}
+.butt{
+    width: 200px;
+    margin:20px auto;
+}
+/* Start contact section */
+.contact{
+    background-image: url('../imgs/Rectangle\ 9.png');
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+.contact input:first-of-type{
+    background: fff;
+   width: 310px;
+   padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    align-items: right;
+    margin-top: 50px;
+    outline: none;
+}
+.contact button a{  color: #d25167;}
+.contact button{
+    background-color: fff;
+   background: #fff;
+    border-radius: 20px;
+    padding: 8px 40px;
+    display: block;
+    margin:50px auto;
+    border: none;
+}
+/* End contact section */
+/* Start footer section */
+.footer{
+    background-image: url('../imgs/Rectangle\ 12@2x.png');
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+}
+.footer ul{
+    list-style: none;
+}
+.foot-img{
+    width: 180px;
+    margin: auto;
+    margin-top: -25px;
+    position: relative;
+}
+.foot-img .logo2{
+    width: 45px;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+}
+.footer p{
+    margin-top: 60px;
+}
+.footer ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer .sochial a{
+    font-size: 35px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.list-footer li {
+    margin-bottom: 10px;
+}
+/* .app-store{width: 90%;margin: auto;} */
+.app-store i{
+    font-size: 50px;
+    color: #ff8a5c;
+}
+.app-store span{
+    font-size: 18px;
+    margin: 0 5px;
+}
+.app-store a{
+    background-color: #fff;
+    color: #cf455c;
+    border-radius: 30px;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+@media screen and (max-width:768px){
+    .app-store span{
+        font-size: 18px;
+    }
+    .app-store{width: 80%;margin: auto;}
+}
+/* End footer section */
+/* ***************************Strat add-e3lan page*************************** */
+.cars-e3lan{display: none;}
+.add-e3lan .header{
+    height: 40vh;
+}
+.title .title{
+    top: 5%;
+}
+.header .title h1{
+    padding-top: 55px;
+}
+.title .image{
+    top: 115px;
+}
+.add-title h4{
+    color: #d25167;
+    border-right: 4px solid #ff8a5c;
+    margin-top: 40px;
+    margin-right: 50px;
+    padding-right: 15px;
+}
+.add-content{
+    background-color: #ececec;
+    border-radius: 25px;
+    margin:30px 50px 90px;
+    padding: 50px;
+    box-shadow:2px 4px 5px #cecece;
+}
+.add-content h5{
+    color: #ff8a5c;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.add-content input,textarea,.add-content .select{
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+}
+.add-content select{
+    appearance: none;
+    border: none; 
+    padding: 10px 30px; 
+    width: 100%;
+    outline: none;
+}
+.add-content .select{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+    height: 3.5em;
+    padding: 8px;
+}
+select::-ms-expand{
+    display: none
+}
+.add-content .select::after{ 
+    position: absolute;
+    content:'\25BC' ;
+    top: 6px;
+    left: -3px;
+    font-size: 28px;
+    color: #ff8a5c;
+    padding: 0 1em;
+   cursor: pointer;
+   pointer-events: none;
+}
+.add-content button{
+    background-image: linear-gradient(to right,#d0465c,#ff8a5c);
+    margin-top: 60px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 50%;
+    color: #fff;
+}
+.chek-box h4{
+color: #ff8a5c;
+text-align: right;
+margin: 20px 0 40px;
+
+}
+.chek-box{
+    margin-bottom: 50px;
+}
+.chek-box .chek input{
+    width: 20px !important;
+    height: 16px;
+}
+.chek-box .chek .box{
+    margin-right: 15px;
+}
+input[type="checkbox"] {
+    background: #3d404e;
+    border: #7f83a2 1px solid;
+    padding: 20px;
+ }
+.chek-box .chek input[type="chekbox"]{
+    background: #ff8a5c;
+}
+input[type="checkbox"] {
+    background: red;
+    border: #7f83a2 1px solid;
+ }
+.chek-box .chek{
+    margin-bottom: 15px;
+   color: #ff8a5c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ***************************End add-e3lan page*************************** */
+/* ***************************Start Cars page*************************** */
+.cars-search .search .select,select{
+    width: 100%;
+}
+.cars-search .search{
+    top: 90%;
+     margin-bottom: 50px;
+     padding: 10px 50px 60px;
+    }
+.cars-search .search .select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cars-search .search .select.first-select::after{display: none;}
+.cars-search .search .select::after{left: 8px;color: #ff8a5c;}
+@media screen and (max-width:768px){
+    .cars-search .search select{
+        border-radius: 9px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .cars-search .search .select::after {
+        left: -13px;
+        top: 13px;
+    }
+}
+.featured-ads{
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 30px 10px;
+}
+.col-md-4{padding-left: 0;}
+.featured-ads .cards{margin: 10px;}
+.featured-ads .card-title{
+    margin-bottom: 50px;
+}
+
+.featured-ads .card-body{
+    background-color: #fff !important;
+    border-radius: 30px !important;
+}
+.featured-ads .card{
+    border-radius: 30px;
+}
+.featured-ads nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.featured-ads nav ul li a{
+    color: #fff;
+     background: #cf455c;
+     font-weight: bold;
+     border-radius: 10px;
+     padding: 5px 10px;
+     font-size: 25px;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+.featured-ads nav ul li{
+    margin-right: 10px;
+   
+}
+.page-item:last-child .page-link {
+    border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px
+}
+.page-item:first-child .page-link
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* ***************************End Cars page*************************** */
+/* ***************************Start Cars page Details*************************** */
+.car-details .header{
+    margin-bottom: 30px;
+}
+.Details-title{
+    margin: 40px;
+}
+.Details-title h3{
+    color: #444444;
+    margin-bottom: 20px;
+}
+.Details-title h4{
+    color: #ff8a5c;
+}
+.Details-section .image{width: 90%;}
+.Details-section img{
+    filter: brightness(0.5);
+    border: none;
+}
+.attention{
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.attention .add-favorit a,
+.attention .error a{text-decoration: none;}
+.attention .add-favorit a{
+color: #cf455c;
+}
+.attention .error a{ 
+    color: #ff8a5c;
+}
+.car-charct{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+.customer-info  a{
+    color: #888;
+    text-decoration: none; 
+}
+  .car-charct p,.car-charct .addtion{
+      background-color: #fff;
+      width: 48%;
+      padding: 15px 10px;
+      border-radius: 30px;
+      color: #888;
+      font-weight: 600;
+  }
+  .car-charct .addtion ul li{margin-bottom: 8px;}
+ .car-charct .year{margin-top: -109px;}
+ @media screen and (max-width:768px){
+     .car-charct{width: 80%;margin:20px auto;}
+     .car-charct .year{margin-top: 0;}
+     .attention{width: 100%;}
+ }
+ .detail-text{width: 90%;}
+ .detail-text h4,.massage h4{color: #cf455c;margin-bottom: 10px;}
+ .detail-text p{
+     background-color: #fff;
+     padding :25px 10px;
+     color: #888;
+     border-radius: 30px;
+     margin-bottom: 20px;
+ }
+ .massage{width: 90%;}
+ .massage textarea{box-shadow: 1px 3px 5px #ddd;}
+ .cars-info .send button{width: 30%;margin-top: 90px;background-image: linear-gradient(#d44c5c,#f9825c);}
+
+/* ******************** */
+.customer-details{width: 80%;}
+.price{
+    background-color: #fff;
+    padding: 10px 40px;
+    color: #cf455c;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    font-size: 40px;
+    width: 250px;
+}
+.Details-section button{
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.Details-section button:first-of-type{
+    background-color: #cf455c; ;
+}
+.Details-section button:last-of-type{
+    background-color: #ff8a5c;
+}
+.Details-section button a{color: #fff;}
+.customer-details .info{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin:0 auto 30px;
+}
+.customer-info{
+    background-color: #fff;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+.customer-data .name{
+    color: #cf455c;
+   margin-right: 30px;
+}
+.customer-data .name p{
+    font-size: 14px;
+}
+.customer-data i{
+font-size: 30px;
+}
+.advices{
+    margin: 20px 0;
+    background-color: #646464;
+    color: #f1f1f1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.advices ul{text-align: right;list-style: none;padding-right: 20px;}
+.advices ul li::before{
+    content: "\2024";
+    color: #f9825c;
+    display: inline-block;
+    font-weight: bold;
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: -33px;
+    font-size: 55px;
+}
+
+.advices ul li{
+    text-align: right;
+}
+.advices ul li:nth-child(2){margin-bottom: 20px;}
+/* ***************************End Cars page Details*************************** */
+/* ***************************Start Login page *************************** */
+.login-page .header,.password-page .header{
+    height: 50vh;
+    margin-bottom: 100px;
+}
+
+.login-content .col-md-6{padding: 0;}
+.login-content .login-info{
+    background-color: #fff;
+    padding: 65px 20px;
+    background-image: url('../imgs/.png');
+  background-size: 100%;
+}
+.name{
+    position: relative;
+}
+.login-info .name i{
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    top: 36px;
+    right: 75px;
+}
+.login-content{margin-bottom: 80px;}
+.login-content .login-info input{
+    background-color: #cf455c;
+    color: #fff !important;
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    padding: 20px 70px;
+    border-radius: 30px;
+    outline: none;
+}
+.login-content .login-info input::-webkit-input-placeholder { 
+    color: #fff;
+  }
+.login-content .login-info button{
+    margin-top: 40px;
+    background-color: #cf455c;
+    width: 30%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+.login-content .login-info button a{ color: #fff;text-decoration: none;}
+.login-info .account{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.login-info .account a{ color: #cf455c;text-decoration: none;}
+.login-content .image:last-of-type{
+  background-image: url('../imgs/Rectangle\ 51.png');
+  padding: 50px 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:767px){
+    .header .header-info {
+        top: 8px;
+        right: 2px;
+    }
+    .header .header-info span {
+        padding: 0 10px;
+    }
+    .img-logo{width: 130px;}
+    .login-info .name i{font-size: 20px;}
+    .login-content .login-info input {
+        padding: 20px 40px;
+
+    }
+    .login-info .name i {
+        right: 44px;
+        top: 43px;
+    }
+}
+
+/* ***************************End Login page *************************** */
+/* *************************** Start password page *************************** */
+.login-info p{color: #cf455c;margin: 90px 0;}
+.password-page .login-info p::before{
+    content: "\2024";
+    color: #f9825c;
+    display: inline-block;
+    font-weight: bold;
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    margin-left: 0.4em;
+    margin-right: -33px;
+    font-size: 100px; 
+}
+/* ***************************End password page *************************** */
